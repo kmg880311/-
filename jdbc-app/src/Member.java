@@ -8,6 +8,7 @@ public class Member {
 		return id;
 	}
 	public void setId(String id) {
+			System.out.println(id);
 		this.id = id;
 	}
 	public String getPw() {
