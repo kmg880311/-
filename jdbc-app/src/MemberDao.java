@@ -46,12 +46,13 @@ public class MemberDao {
 			member.setName(rs.getString("ora_name"));
 			member.setEmail(rs.getString("ora_email"));
 		}
-		return null;
+		return member
+				;
 	}
 	
 	public static void main(String[] args) throws ClassNotFoundException, SQLException, IOException{
 		MemberDao mdao = new MemberDao();
-		Member m = mdao.sellectMemberById("id001");
+		Member m = mdao.sellectMemberById("id002");
 			System.out.println(m.getId().equals("홍01"));
 			System.out.println(m.getPw());
 			System.out.println(m.getLevel());
