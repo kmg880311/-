@@ -49,7 +49,7 @@ public class MemberDao {
 		return member
 				;
 	}
-	
+	//////////////////////////////////////
 	public static void main(String[] args) throws ClassNotFoundException, SQLException, IOException{
 		MemberDao mdao = new MemberDao();
 		Member m = mdao.sellectMemberById("id002");
